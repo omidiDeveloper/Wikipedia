@@ -17,10 +17,6 @@
         android:icon="@drawable/ic_heart"
         android:title="Likes" />
 
-    <item
-        android:id="@+id/profile_menu"
-        android:icon="@drawable/profile"
-        android:title="Profile" />
 
 
 

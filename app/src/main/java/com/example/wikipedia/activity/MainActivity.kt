@@ -12,7 +12,6 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.wikipedia.R
 import com.example.wikipedia.databinding.ActivityMainBinding
-import com.example.wikipedia.fragment.FragmentProfile
 import com.example.wikipedia.fragments.FragmentExplore
 import com.example.wikipedia.fragments.FragmentLikes
 import com.example.wikipedia.fragments.FragmentPhotographer
@@ -68,13 +67,6 @@ class MainActivity : AppCompatActivity() {
 
             when (it.itemId) {
 
-                R.id.writer_menu -> {
-
-                    val intent = Intent(this, writer_activity::class.java)
-                    startActivity(intent)
-
-                    binding.drawerLayoutMain.closeDrawer(binding.navigationViewMain)
-                }
 
                 R.id.photographer_menu -> {
 
@@ -117,6 +109,12 @@ class MainActivity : AppCompatActivity() {
                     binding.drawerLayoutMain.closeDrawer(binding.navigationViewMain)
                 }
 
+                R.id.writer_menu -> {
+                    Toast.makeText(this, "writer option will be add at future!", Toast.LENGTH_SHORT).show()
+
+                    binding.drawerLayoutMain.closeDrawer(binding.navigationViewMain)
+                }
+
                 //---------------menu group
 
                 R.id.wikipedia_menu -> {
@@ -150,13 +148,6 @@ class MainActivity : AppCompatActivity() {
         //function for when user came for first time which fragment show it
         firstRun()
 
-        //here is for clicked in fab icon writer
-
-        binding.fabWrite.setOnClickListener {
-            val intent = Intent(this, writer_activity::class.java)
-            startActivity(intent)
-        }
-
         //here is for times that user want to click in bottom navigation item
 
         binding.bottomNavigationMain.setOnItemSelectedListener {
@@ -171,9 +162,6 @@ class MainActivity : AppCompatActivity() {
                     replaceFragment(FragmentTrend())
                 }
 
-                R.id.profile_menu -> {
-                    replaceFragment(FragmentProfile())
-                }
 
                 R.id.likes_menu -> {
                     replaceFragment(FragmentLikes())
