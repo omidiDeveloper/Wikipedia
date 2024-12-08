@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/writer_menu"
+        android:title="be a writer"
+        android:icon="@drawable/writer"/>
+
+    <item
+        android:checkable="true"
+        android:id="@+id/photographer_menu"
+        android:title="be a photographer"
+        android:icon="@drawable/photographer"/>
+
+    <item
+        android:id="@+id/video_menu"
+        android:title="be a video maker"
+        android:icon="@drawable/video_maker"/>
+
+ <item
+        android:id="@+id/translator_menu"
+        android:title="be a translator"
+        android:icon="@drawable/translate"/>
+
+<item
+    android:title="our websites">
+
+    <menu>
+
+        <item
+            android:id="@+id/wikipedia_menu"
+            android:title="visit wikipedia"
+            android:icon="@drawable/wikimedia"/>
+
+        <item
+            android:id="@+id/wikimedia_menu"
+            android:title="visit wikimedia"
+            android:icon="@drawable/wikimedia"/>
+
+
+    </menu>
+</item>
+
+</menu>

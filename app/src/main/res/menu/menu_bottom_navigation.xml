@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/explore_menu"
+        android:icon="@drawable/explore"
+        android:title="Explore" />
+
+    <item
+        android:id="@+id/trend_menu"
+        android:icon="@drawable/trend"
+        android:title="Trend" />
+
+    <item
+        android:id="@+id/likes_menu"
+        android:icon="@drawable/ic_heart"
+        android:title="Likes" />
+
+    <item
+        android:id="@+id/profile_menu"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+
+
+
+</menu>
